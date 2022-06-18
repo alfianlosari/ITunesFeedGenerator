@@ -7,7 +7,13 @@
 
 import Foundation
 
-public struct FeedRepository {
+public protocol FeedRepositoryInterface {
+    func getMostPlayedSongsFeed(region: String, resultLimit: ResultLimit) async throws -> Feed<Song>
+    func getTopAppsFeed(region: String, type: PricingType, resultLimit: ResultLimit) async throws -> Feed<Application>
+    func getTopBooksFeed(region: String, type: PricingType, resultLimit: ResultLimit) async throws -> Feed<Book>
+}
+
+public struct FeedRepository: FeedRepositoryInterface {
     
     let baseURL: String
     private let session = URLSession.shared
