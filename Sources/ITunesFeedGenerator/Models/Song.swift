@@ -17,3 +17,4 @@ public struct Song: Codable {
     public let url: String
 }
 
+extension Song: Hashable {}

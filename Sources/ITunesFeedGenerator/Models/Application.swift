@@ -17,3 +17,5 @@ public struct Application: Codable {
     public let artworkUrl100: String
     public let url: String
 }
+
+extension Application: Hashable {}

@@ -19,3 +19,5 @@ public struct Book: Codable {
     public let artworkUrl100: String
     public let url: String
 }
+
+extension Book: Hashable {}

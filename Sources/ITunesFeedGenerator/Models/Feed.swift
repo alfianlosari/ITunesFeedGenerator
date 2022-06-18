@@ -18,6 +18,5 @@ public struct Feed<R: Codable>: Codable {
     public let country: String
     public let icon: String
     public let updated: String
-    
     public let results: [R]
 }
