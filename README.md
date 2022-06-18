@@ -64,3 +64,7 @@ let topPaidApps = try await repository.getTopBooksFeed(region: "us", type: .topP
 ### Supported Region Code Strings
 
 You can get the list of all supported region code parameters from this [GitHub Gist](https://gist.github.com/daFish/5990634). Kudos to [Marcus Stöhr/daFish](https://gist.github.com/daFish)
+
+### SwiftUI Helper Library
+
+I also created a library that provide SwiftUI Views to display song/book/app and ObservableObjects to fetch the data using phase state mechanism (loading, success, failure). You can check it out at [ITunesFeedSwiftUI](https://github.com/alfianlosari/ITunesFeedSwiftUI)
